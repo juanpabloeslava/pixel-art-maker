@@ -9,5 +9,5 @@ function makeGrid() {
 	let gridH = document.getElementsByName('input_height').value; 
 	let gridW = document.getElementsByName('input_width').value;
 
-	console.log ('H: ' + gridH + 'and W: ' gridW); 
+	console.log ('H: ' + gridH + 'and W: ' + gridW); 
 }
