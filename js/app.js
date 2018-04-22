@@ -4,7 +4,10 @@
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid() {
+	// declare variables to work with
+	const table = document.getElementById('pixel_canvas')
+	let gridH = document.getElementsByName('input_height').value; 
+	let gridW = document.getElementsByName('input_width').value;
 
-// Your code goes here!
-
+	console.log ('H: ' + gridH + 'and W: ' gridW); 
 }
