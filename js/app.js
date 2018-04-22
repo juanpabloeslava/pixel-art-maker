@@ -27,9 +27,19 @@ function makeGrid() {
             tr.append(td);
         }
     }
-
     // test correct removal of children 2
 	let noChildren2 = (table.children.length === 0) ? 'There are no Children2 on the table' : 'There are ' + table.children.length + ' Children2';
 	console.log(noChildren2);
+
+	// Color the cells
+	function addColor (event) {
+		// get color from color picker
+		let color = document.getElementById('colorPicker').value;
+		// set color to the cell (done thorugh event delegation and using the event.target property of the event element)
+		event.target.style.backgroundColor = color;
+		event.target.borderColor = color;
+	}
+	table.addEventListener('click', addColor);
+
 }
 
