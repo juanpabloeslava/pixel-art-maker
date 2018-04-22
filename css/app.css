@@ -1,0 +1,109 @@
+/*
+Style Guide for Pixel Grid Project
+V.1
+*/
+/*
+CSS INDEX
+
+1 - General
+2 - Table
+3 - H and W Input
+4 - Color Input
+5 - Divs
+*/
+/*
+1 - General
+*/
+body {
+  text-align: center;
+  background: #eee;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Monospace;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0.7em 0.2em 0.5em 0.2em;
+}
+
+h2 {
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+/*
+2 - Table
+*/
+table, tr, td {
+  border: 1px solid #ccc;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+/*
+3 - H and W Input
+*/
+input[type=number] {
+  width: 6em;
+}
+
+.container {
+  margin: auto;
+  /*width: 60%;*/
+}
+
+.selected_color {
+  float: left;
+  height: 20px;
+  width: 35px;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+form {
+  font-family: Monospace;
+  margin: 20px 0 5px 0;
+}
+
+input {
+  font-family: Monospace;
+  color: gray;
+  background: #eee;
+  height: 2.5em;
+  border: 2px solid gray;
+  text-align: center;
+}
+
+input[type=submit] {
+  height: 3.1em;
+  margin: 0 0 0 35px;
+}
+
+input[type=submit]:hover {
+  color: white;
+  background: #222;
+}
+
+/*
+5 - Divs
+*/
+#container4 {
+  padding: 10px;
+}
