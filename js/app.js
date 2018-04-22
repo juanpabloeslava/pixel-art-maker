@@ -14,8 +14,8 @@ function makeGrid() {
 	    table.removeChild(table.lastChild);
 	}
 	// test correct removal of children
-	let noChildren1 = (table.children.length === 0) ? 'There are no Children1 on the table' : 'There are ' + table.children.length + ' Children1';
-	console.log(noChildren1);
+	// let noChildren1 = (table.children.length === 0) ? 'There are no Children1 on the table' : 'There are ' + table.children.length + ' Children1';
+	// console.log(noChildren1);
 
 	// create new rows and columns in table
 	for (let row=0; row < gridH ; row++) {
@@ -28,8 +28,8 @@ function makeGrid() {
         }
     }
     // test correct removal of children 2
-	let noChildren2 = (table.children.length === 0) ? 'There are no Children2 on the table' : 'There are ' + table.children.length + ' Children2';
-	console.log(noChildren2);
+	// let noChildren2 = (table.children.length === 0) ? 'There are no Children2 on the table' : 'There are ' + table.children.length + ' Children2';
+	// console.log(noChildren2);
 
 	// Color the cells
 	function addColor (event) {
@@ -40,6 +40,12 @@ function makeGrid() {
 		event.target.borderColor = color;
 	}
 	table.addEventListener('click', addColor);
-
 }
 
+// Run makeGrid() when form is submited
+document.getElementById('sizePicker').addEventListener('submit', function (element) {
+	// prevent default on submit
+	element.preventDefault();
+	// trigger makeGrid()
+	makeGrid();
+});
